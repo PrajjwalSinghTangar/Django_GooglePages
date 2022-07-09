@@ -1,0 +1,159 @@
+body {
+  margin: 0px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.Container .Header {
+  display: flex;
+  flex: 0.5;
+  justify-content: end;
+  height: 20px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+.Container .Header .Links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+.Container .Header .Links a {
+  color: black;
+  text-decoration: none;
+}
+.Container .Header .Links :hover {
+  text-decoration: underline;
+}
+.Container .Header .Links .Search {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.Container .ImageContainer {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+.Container .ImageContainer .GoogleImage {
+  margin-top: auto;
+}
+.Container .SearchBox {
+  flex: 1;
+}
+.Container .SearchBox .SearchForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+}
+.Container .SearchBox .SearchForm .SearchInputContainer {
+  display: flex;
+  border: 1px solid #dfe1e5;
+  align-items: center;
+  border-radius: 24px;
+  height: 44px;
+  min-width: 450px;
+  margin: auto;
+}
+.Container .SearchBox .SearchForm .SearchInputContainer .SearchInput {
+  border: 1px #ffffff;
+  border-radius: 24px;
+  height: 42px;
+  width: 550px;
+  outline: none;
+  font-size: 15px;
+}
+.Container .SearchBox .SearchForm .SearchInputContainer img {
+  height: 28px;
+  margin: 0px 13px;
+  border-radius: 99px;
+}
+.Container .SearchBox .SearchForm :hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+.Container .SearchBox .SearchForm :hover .SearchInput {
+  box-shadow: none;
+}
+.Container .SearchBox .SearchForm :hover img {
+  box-shadow: none;
+}
+.Container .SearchBox .SearchForm .ButtonContainer {
+  margin: auto;
+}
+.Container .SearchBox .SearchForm .ButtonContainer .SearchButton {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  max-width: max-content;
+  margin: auto;
+  width: 250px;
+  height: 40px;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+.Container .SearchBox .SearchForm .ButtonContainer .SearchButton .SearchButton {
+  cursor: pointer;
+}
+.Container .SearchBox .SearchForm .ButtonContainer .SearchButton a {
+  color: black;
+  text-decoration: none;
+}
+.Container .SearchBox .SearchForm .ButtonContainer .SearchButton :hover {
+  box-shadow: none;
+}
+.Container .SearchBox .SearchForm .ButtonContainer :hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+.Container .GoogleOfferedIn {
+  flex: 2;
+  margin: auto;
+  display: flex;
+  font-size: 15px;
+}
+.Container .GoogleOfferedIn .OfferedInHead {
+  font-family: arial, sans-serif;
+}
+.Container .GoogleOfferedIn .OfferedInColor {
+  color: rgb(0, 0, 199);
+}
+.Container .Footer {
+  flex: 0.5;
+  display: flex;
+  justify-content: space-between;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #7c7c7c;
+  background-color: #e3e3e3;
+}
+.Container .Footer .FooterStart {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Container .Footer .FooterEnd {
+  margin-right: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Container .Footer a {
+  cursor: pointer;
+  color: #7c7c7c;
+  text-decoration: none;
+}
+.Container .Footer span {
+  padding: 20px 10px;
+}
+.Container .Footer span :hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=google_search.css.map */

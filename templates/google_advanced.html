@@ -1,0 +1,91 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="stylesheet" href="{% static 'static/google_advanced_style.css' %}">
+    </head>
+    <body>
+        <div class="Container">
+            <!--Header-->
+            <div class="Header">
+                <div class="GoogleImage">
+                    <a href="/"><img src="{% static 'static/assets/googlelogo_color_272x92dp.png' %}"></a> 
+                </div>
+                <div class="Links">
+                    <div class="Search">
+                        <a href="/"> Google Search </a>
+                    </div>
+                    <div class="Search">
+                        <a href="/image/"> Image Search</a>
+                    </div>
+                </div>
+            </div>
+            <!--Title-->
+            <div class="TitleContainer">
+                <div class="Title">
+                    <div class="TitleText">
+                        Advanced Search
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+        
+        <!--Form-->
+        <!--Find Pages with...-->
+            <div class="FindPageContainer">
+                <div class="FindPageBorder">
+                        <!--Form Starts Here-->
+                    <form action="https://google.com/search" name="f">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="left">Find Pages With...</th>
+                                    <th class="center"></th>
+                                    <th class="right">To do in the search box.</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="left">all these words:</td>
+                                    <td class="center"><input type="text" class="textinput" id="field1" value=""  name="as_q"></td>
+                                    <td  class="right">Type the important words: tri-colour rat terrier</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">this exact word or phrase:</td>
+                                    <td class="center"><input type="text" class="textinput" id="field2" value=""  name="as_epq"></td>
+                                    <td  class="right">Put exact words in quotes: "rat terrier"</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">any of this words:</td>
+                                    <td class="center"><input type="text" class="textinput" id="field3" value=""  name="as_oq"></td>
+                                    <td  class="right">Type OR between all the words you want: miniature OR standard"</td>
+                                </tr>
+                                <tr>
+                                    <td class="left">none of these words:</td>
+                                    <td class="center"><input type="text" class="textinput" id="field4" value=""  name="as_eq"></td>
+                                    <td  class="right">Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="SubmitInputContainer">
+                            <input class="SubmitInput" type="submit" value="Advanced Search">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Footer-->
+            <div class="Footer">
+                <div class="FooterLinks">
+                    <span><a href="https://support.google.com/websearch/?visit_id=637963268627158207-1011625583&hl=en-IN&rd=2#topic=3378866">
+                        Help</a></span>
+                    <span><a href="https://policies.google.com/privacy?hl=en-IN&fg=1">
+                        Privacy</a></span>
+                    <span><a href="https://policies.google.com/terms?hl=en-IN&fg=1">
+                        Terms</a></span>
+                </div>          
+            </div>
+        </div>
+    </body>
+</html>

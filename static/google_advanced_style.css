@@ -1,0 +1,137 @@
+body {
+  margin: 0px;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.Container .Header {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  height: 25px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+.Container .Header .GoogleImage img {
+  max-height: 25px;
+  margin: 15px 20px;
+}
+.Container .Header .Links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+}
+.Container .Header .Links a {
+  color: black;
+  text-decoration: none;
+}
+.Container .Header .Links :hover {
+  text-decoration: underline;
+}
+.Container .Header .Links .Search {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.Container .TitleContainer {
+  width: 100%;
+  flex: 1;
+}
+.Container .TitleContainer .Title {
+  margin: 20px 40px;
+  width: 80%;
+}
+.Container .TitleContainer .Title .TitleText {
+  align-items: center;
+  color: #d93025;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Container .divider {
+  border-bottom: 1px solid #ebebeb;
+}
+.Container .FindPageContainer {
+  flex: 10;
+  margin: 10px 60px;
+}
+.Container .FindPageContainer .FindPageBorder table thead th {
+  text-align: left;
+  padding: 10px 0px;
+}
+.Container .FindPageContainer .FindPageBorder table thead tr .left {
+  width: 15%;
+}
+.Container .FindPageContainer .FindPageBorder table thead tr .center {
+  width: 40%;
+}
+.Container .FindPageContainer .FindPageBorder table thead tr .right {
+  width: 30%;
+}
+.Container .FindPageContainer .FindPageBorder table tbody tr td {
+  padding: 10px 0px;
+}
+.Container .FindPageContainer .FindPageBorder table tbody tr td input {
+  width: 90%;
+  border: 1px solid #dfe1e5;
+  height: 30px;
+  outline: none;
+}
+.Container .FindPageContainer .FindPageBorder table tbody tr td :hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+@media (max-width: 600px) {
+  .Container .FindPageContainer .FindPageBorder table .right {
+    display: none;
+  }
+  .Container .FindPageContainer .FindPageBorder table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .Container .FindPageContainer .FindPageBorder table tbody tr .center {
+    width: 80vw;
+  }
+}
+.Container .FindPageContainer .FindPageBorder .SubmitInputContainer {
+  width: 90%;
+  margin: 20px;
+  text-align: center;
+}
+.Container .FindPageContainer .FindPageBorder .SubmitInputContainer .SubmitInput {
+  padding: 10px 5px;
+  border: 1px solid #4d90fe;
+  background-color: #4d90fe;
+  color: white;
+  background-image: -webkit-linear-gradient(top, #4d90fe, #4787ed);
+  cursor: pointer;
+}
+.Container .FindPageContainer .FindPageBorder .SubmitInputContainer :hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+.Container .Footer {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e3e3e3;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.Container .Footer .FooterLinks {
+  margin: 0px 30px;
+}
+.Container a {
+  cursor: pointer;
+  color: #7c7c7c;
+  text-decoration: none;
+}
+.Container span {
+  padding: 20px 10px;
+}
+.Container span :hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=google_advanced_style.css.map */
